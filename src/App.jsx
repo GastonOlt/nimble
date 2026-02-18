@@ -55,9 +55,10 @@ function App() {
         uuid: candidateData.uuid,
         jobId: jobId,
         candidateId: candidateData.candidateId,
+        applicationId: candidateData.applicationId,
         repoUrl: repoUrl,
       };
-
+      
       const result = await applyToJob(payload);
 
       if (result.ok) {
